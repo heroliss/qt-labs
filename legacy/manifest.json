@@ -1,0 +1,307 @@
+{
+  "copied_source_only": true,
+  "backup_read_only": true,
+  "files": [
+    {
+      "app": "os",
+      "source": "E:\\--Backup--\\手动备份\\自写程序备份\\自写程序备份\\QT Project\\可视化操作系统\\OS\\input_createprocessdialog.cpp",
+      "archive": "legacy/os/input_createprocessdialog.cpp",
+      "bytes": 695,
+      "sha256": "12c3258e36307f83a44053fdba0a25dba3a6cefa0ce3750ed97358a7ef19696e"
+    },
+    {
+      "app": "os",
+      "source": "E:\\--Backup--\\手动备份\\自写程序备份\\自写程序备份\\QT Project\\可视化操作系统\\OS\\input_createprocessdialog.h",
+      "archive": "legacy/os/input_createprocessdialog.h",
+      "bytes": 514,
+      "sha256": "43e699d8d86463f1fb4395de160fdc100c67789dfb5ba0d0842c24d634a5e4c5"
+    },
+    {
+      "app": "os",
+      "source": "E:\\--Backup--\\手动备份\\自写程序备份\\自写程序备份\\QT Project\\可视化操作系统\\OS\\input_createprocessdialog.ui",
+      "archive": "legacy/os/input_createprocessdialog.ui",
+      "bytes": 2950,
+      "sha256": "3b20beb7b373bc0a8e18ced27922bd012dd0e8a379dcbb14766e405ce73075a7"
+    },
+    {
+      "app": "os",
+      "source": "E:\\--Backup--\\手动备份\\自写程序备份\\自写程序备份\\QT Project\\可视化操作系统\\OS\\inputmemorysizedialog.cpp",
+      "archive": "legacy/os/inputmemorysizedialog.cpp",
+      "bytes": 2170,
+      "sha256": "0d6b3ca5df1930728db7044f6a89ff1b7e395e05f6d100e9cd186922bcf2b3ed"
+    },
+    {
+      "app": "os",
+      "source": "E:\\--Backup--\\手动备份\\自写程序备份\\自写程序备份\\QT Project\\可视化操作系统\\OS\\inputmemorysizedialog.h",
+      "archive": "legacy/os/inputmemorysizedialog.h",
+      "bytes": 626,
+      "sha256": "e41633e38e129aee2d51f0ddae76c647ebdd8eef2fa809f73bed902199076269"
+    },
+    {
+      "app": "os",
+      "source": "E:\\--Backup--\\手动备份\\自写程序备份\\自写程序备份\\QT Project\\可视化操作系统\\OS\\inputmemorysizedialog.ui",
+      "archive": "legacy/os/inputmemorysizedialog.ui",
+      "bytes": 4763,
+      "sha256": "d061e831274f8ee26e3d9fa8a4599357c5c47cb1e82a9ecd35d063c7e6aa2b62"
+    },
+    {
+      "app": "os",
+      "source": "E:\\--Backup--\\手动备份\\自写程序备份\\自写程序备份\\QT Project\\可视化操作系统\\OS\\main.cpp",
+      "archive": "legacy/os/main.cpp",
+      "bytes": 185,
+      "sha256": "1554a862db3af0c844c202c8f91519fa7f1703370dfbbf1fc470583bc15be235"
+    },
+    {
+      "app": "os",
+      "source": "E:\\--Backup--\\手动备份\\自写程序备份\\自写程序备份\\QT Project\\可视化操作系统\\OS\\memorygraphdialog.cpp",
+      "archive": "legacy/os/memorygraphdialog.cpp",
+      "bytes": 1631,
+      "sha256": "813587893c3e9ce3cadb80160f8f08d90c2035a55c92f96144559d8ffd25fd40"
+    },
+    {
+      "app": "os",
+      "source": "E:\\--Backup--\\手动备份\\自写程序备份\\自写程序备份\\QT Project\\可视化操作系统\\OS\\memorygraphdialog.h",
+      "archive": "legacy/os/memorygraphdialog.h",
+      "bytes": 566,
+      "sha256": "218e31e1ab2095cde4d746f5ef1273a4644a5b449596601ccdd7175cd97490eb"
+    },
+    {
+      "app": "os",
+      "source": "E:\\--Backup--\\手动备份\\自写程序备份\\自写程序备份\\QT Project\\可视化操作系统\\OS\\memorygraphdialog.ui",
+      "archive": "legacy/os/memorygraphdialog.ui",
+      "bytes": 426,
+      "sha256": "d01c41aa86bd30cd0cc821247e2d04d7da45ccebce8f9e7a4ed2f77df5c82111"
+    },
+    {
+      "app": "os",
+      "source": "E:\\--Backup--\\手动备份\\自写程序备份\\自写程序备份\\QT Project\\可视化操作系统\\OS\\OS.pro",
+      "archive": "legacy/os/OS.pro",
+      "bytes": 929,
+      "sha256": "1498daa98ff6221c12ada9481b28d395361a71d910755437c4c77841bb6121fc"
+    },
+    {
+      "app": "os",
+      "source": "E:\\--Backup--\\手动备份\\自写程序备份\\自写程序备份\\QT Project\\可视化操作系统\\OS\\os_basic.cpp",
+      "archive": "legacy/os/os_basic.cpp",
+      "bytes": 8360,
+      "sha256": "8eded22ddf35669195bc09675e7a7b5ddb6bac80afaa1bec1c710c9c88a99fb0"
+    },
+    {
+      "app": "os",
+      "source": "E:\\--Backup--\\手动备份\\自写程序备份\\自写程序备份\\QT Project\\可视化操作系统\\OS\\os_basic.h",
+      "archive": "legacy/os/os_basic.h",
+      "bytes": 2333,
+      "sha256": "719498453c9ad84768dc37697f99e07bfd76415bd221e7f3681da6656f583004"
+    },
+    {
+      "app": "os",
+      "source": "E:\\--Backup--\\手动备份\\自写程序备份\\自写程序备份\\QT Project\\可视化操作系统\\OS\\os_functionDefine.cpp",
+      "archive": "legacy/os/os_functionDefine.cpp",
+      "bytes": 449,
+      "sha256": "4d9580fea1dfa8c05b2f27dadc56b93d29fdf1260fb9913d9769819045f06e11"
+    },
+    {
+      "app": "os",
+      "source": "E:\\--Backup--\\手动备份\\自写程序备份\\自写程序备份\\QT Project\\可视化操作系统\\OS\\os_mainwindow.cpp",
+      "archive": "legacy/os/os_mainwindow.cpp",
+      "bytes": 13647,
+      "sha256": "b850a88740ab8407feda5214bd00fd205413b13355796f1680f02546ea5d886f"
+    },
+    {
+      "app": "os",
+      "source": "E:\\--Backup--\\手动备份\\自写程序备份\\自写程序备份\\QT Project\\可视化操作系统\\OS\\os_mainwindow.h",
+      "archive": "legacy/os/os_mainwindow.h",
+      "bytes": 2080,
+      "sha256": "df3a696ea7e8e6dc27044853f77713030a95c303f233fd4140e38f4166bd5280"
+    },
+    {
+      "app": "os",
+      "source": "E:\\--Backup--\\手动备份\\自写程序备份\\自写程序备份\\QT Project\\可视化操作系统\\OS\\os_mainwindow.ui",
+      "archive": "legacy/os/os_mainwindow.ui",
+      "bytes": 10354,
+      "sha256": "0fc42c185ab69b3cfac132465140ce7dde602b8a79e01157001541e3909e618d"
+    },
+    {
+      "app": "os",
+      "source": "E:\\--Backup--\\手动备份\\自写程序备份\\自写程序备份\\QT Project\\可视化操作系统\\OS\\os_memoryError.h",
+      "archive": "legacy/os/os_memoryError.h",
+      "bytes": 368,
+      "sha256": "d069ea03fb15b1931316bf1495429577a39920ad8752c55b150c3ba53de289c9"
+    },
+    {
+      "app": "os",
+      "source": "E:\\--Backup--\\手动备份\\自写程序备份\\自写程序备份\\QT Project\\可视化操作系统\\OS\\os_simulateMemory.cpp",
+      "archive": "legacy/os/os_simulateMemory.cpp",
+      "bytes": 946,
+      "sha256": "ccb2c935a4d12bcadd8288570067dce7e99b2da2f19ed4d2c9ad94d4a777d92c"
+    },
+    {
+      "app": "os",
+      "source": "E:\\--Backup--\\手动备份\\自写程序备份\\自写程序备份\\QT Project\\可视化操作系统\\OS\\os_simulateMemory.h",
+      "archive": "legacy/os/os_simulateMemory.h",
+      "bytes": 1279,
+      "sha256": "2fd784b3d8f0aefd0274c7ecc834b6b3535d52fa19bab2bb91ba0e1e080f110b"
+    },
+    {
+      "app": "os",
+      "source": "E:\\--Backup--\\手动备份\\自写程序备份\\自写程序备份\\QT Project\\可视化操作系统\\OS\\os_typedefine.h",
+      "archive": "legacy/os/os_typedefine.h",
+      "bytes": 1414,
+      "sha256": "88c8bd355d735477600225d188cde588a28a89469632e3ab87bbed75ec87549e"
+    },
+    {
+      "app": "os",
+      "source": "E:\\--Backup--\\手动备份\\自写程序备份\\自写程序备份\\QT Project\\可视化操作系统\\OS\\processtabledialog.cpp",
+      "archive": "legacy/os/processtabledialog.cpp",
+      "bytes": 3048,
+      "sha256": "98a46879e2a95c35540f34481d9c01a3d7121115b7330e133eefaf9d2727a6b7"
+    },
+    {
+      "app": "os",
+      "source": "E:\\--Backup--\\手动备份\\自写程序备份\\自写程序备份\\QT Project\\可视化操作系统\\OS\\processtabledialog.h",
+      "archive": "legacy/os/processtabledialog.h",
+      "bytes": 540,
+      "sha256": "8f4fe205c3a0d515f7ac2dab074543afb2fa52c168ef46fbf6ae464924b3444c"
+    },
+    {
+      "app": "os",
+      "source": "E:\\--Backup--\\手动备份\\自写程序备份\\自写程序备份\\QT Project\\可视化操作系统\\OS\\processtabledialog.ui",
+      "archive": "legacy/os/processtabledialog.ui",
+      "bytes": 574,
+      "sha256": "9022887094bb0a9b91e3536276b6463e019e441f035f8850b5d30f396c9e5690"
+    },
+    {
+      "app": "huffman",
+      "source": "E:\\--Backup--\\手动备份\\自写程序备份\\自写程序备份\\QT Project\\huffman 2.4 10M-3.2-0.8\\hafuman.pro",
+      "archive": "legacy/huffman/hafuman.pro",
+      "bytes": 457,
+      "sha256": "ec883d3245fd78eda6be2596e864dfa1941f3f30038d9252b01eb429ab1ee8c1"
+    },
+    {
+      "app": "huffman",
+      "source": "E:\\--Backup--\\手动备份\\自写程序备份\\自写程序备份\\QT Project\\huffman 2.4 10M-3.2-0.8\\huffman.h",
+      "archive": "legacy/huffman/huffman.h",
+      "bytes": 14615,
+      "sha256": "85d43c79810239eb3ba19f3d4bc72310045f899c44bfe4df59a5247b06cf07d6"
+    },
+    {
+      "app": "huffman",
+      "source": "E:\\--Backup--\\手动备份\\自写程序备份\\自写程序备份\\QT Project\\huffman 2.4 10M-3.2-0.8\\main.cpp",
+      "archive": "legacy/huffman/main.cpp",
+      "bytes": 212,
+      "sha256": "c085346f8040d1b940614e5879351ff0885c357bd2fc0fd3dd6fc9c271361652"
+    },
+    {
+      "app": "huffman",
+      "source": "E:\\--Backup--\\手动备份\\自写程序备份\\自写程序备份\\QT Project\\huffman 2.4 10M-3.2-0.8\\mainwindow.cpp",
+      "archive": "legacy/huffman/mainwindow.cpp",
+      "bytes": 20883,
+      "sha256": "77ee370c8ef712fbb8b8b9a05e00dfe8761eb69928693929092c136b3945d862"
+    },
+    {
+      "app": "huffman",
+      "source": "E:\\--Backup--\\手动备份\\自写程序备份\\自写程序备份\\QT Project\\huffman 2.4 10M-3.2-0.8\\mainwindow.h",
+      "archive": "legacy/huffman/mainwindow.h",
+      "bytes": 1273,
+      "sha256": "d703fe1bad1540534a9124ae5311e6d5aac3602bf74f561ef41e16ddb388a601"
+    },
+    {
+      "app": "huffman",
+      "source": "E:\\--Backup--\\手动备份\\自写程序备份\\自写程序备份\\QT Project\\huffman 2.4 10M-3.2-0.8\\mainwindow.ui",
+      "archive": "legacy/huffman/mainwindow.ui",
+      "bytes": 8246,
+      "sha256": "f5c2824a4fad82db128b755a0f1b6bebb361f1b59be59be9a9f7631094cc8f6f"
+    },
+    {
+      "app": "huffman",
+      "source": "E:\\--Backup--\\手动备份\\自写程序备份\\自写程序备份\\QT Project\\huffman 2.4 10M-3.2-0.8\\setdialog.cpp",
+      "archive": "legacy/huffman/setdialog.cpp",
+      "bytes": 1793,
+      "sha256": "0608c7e30e4b723e5cce1972b5e31f8f7e29f4a49f104634af6a7fea196c21c6"
+    },
+    {
+      "app": "huffman",
+      "source": "E:\\--Backup--\\手动备份\\自写程序备份\\自写程序备份\\QT Project\\huffman 2.4 10M-3.2-0.8\\setdialog.h",
+      "archive": "legacy/huffman/setdialog.h",
+      "bytes": 777,
+      "sha256": "cc9e9871dec6a0b330f325d65e271e8df286c4c59134dc21ad6dc3f3b0b7fae0"
+    },
+    {
+      "app": "huffman",
+      "source": "E:\\--Backup--\\手动备份\\自写程序备份\\自写程序备份\\QT Project\\huffman 2.4 10M-3.2-0.8\\setdialog.ui",
+      "archive": "legacy/huffman/setdialog.ui",
+      "bytes": 5055,
+      "sha256": "15a5d50ef091f3fea96dc1a4abe75877a5fddb1b321bbdf06749ab98c699c3e4"
+    },
+    {
+      "app": "calculator",
+      "source": "E:\\--Backup--\\手动备份\\自写程序备份\\自写程序备份\\QT Project\\calculator\\aboutdialog.cpp",
+      "archive": "legacy/calculator/aboutdialog.cpp",
+      "bytes": 314,
+      "sha256": "0ecce1213cffc71bb20ed2bcf88c490188c17a2d50492cecfaebf88959e7eaf3"
+    },
+    {
+      "app": "calculator",
+      "source": "E:\\--Backup--\\手动备份\\自写程序备份\\自写程序备份\\QT Project\\calculator\\aboutdialog.h",
+      "archive": "legacy/calculator/aboutdialog.h",
+      "bytes": 373,
+      "sha256": "39d8d2b8ae6e705111ebd45ce8b1454768a2f246d648c0ad54791cc69b41e89f"
+    },
+    {
+      "app": "calculator",
+      "source": "E:\\--Backup--\\手动备份\\自写程序备份\\自写程序备份\\QT Project\\calculator\\aboutdialog.ui",
+      "archive": "legacy/calculator/aboutdialog.ui",
+      "bytes": 3398,
+      "sha256": "aa402b4e46e3741d30a4d857896bcaeec2216dd455b725bb20a1e587e54b92b2"
+    },
+    {
+      "app": "calculator",
+      "source": "E:\\--Backup--\\手动备份\\自写程序备份\\自写程序备份\\QT Project\\calculator\\calculate.h",
+      "archive": "legacy/calculator/calculate.h",
+      "bytes": 21677,
+      "sha256": "27cd4e51dc40f038a5f36a56b0043330e935591e3ea93436dad05cf49b0037ce"
+    },
+    {
+      "app": "calculator",
+      "source": "E:\\--Backup--\\手动备份\\自写程序备份\\自写程序备份\\QT Project\\calculator\\calculator.pro",
+      "archive": "legacy/calculator/calculator.pro",
+      "bytes": 383,
+      "sha256": "9564ca7e433b5cd6930dc9bbd502aef66d164cb7798efe195e452b4b2f94f6fd"
+    },
+    {
+      "app": "calculator",
+      "source": "E:\\--Backup--\\手动备份\\自写程序备份\\自写程序备份\\QT Project\\calculator\\main.cpp",
+      "archive": "legacy/calculator/main.cpp",
+      "bytes": 212,
+      "sha256": "c085346f8040d1b940614e5879351ff0885c357bd2fc0fd3dd6fc9c271361652"
+    },
+    {
+      "app": "calculator",
+      "source": "E:\\--Backup--\\手动备份\\自写程序备份\\自写程序备份\\QT Project\\calculator\\mainwindow.cpp",
+      "archive": "legacy/calculator/mainwindow.cpp",
+      "bytes": 13708,
+      "sha256": "b05dd4703271969ea88a3207ff57b8ac7085a0ba8b9e37f91a970aec53c71e29"
+    },
+    {
+      "app": "calculator",
+      "source": "E:\\--Backup--\\手动备份\\自写程序备份\\自写程序备份\\QT Project\\calculator\\mainwindow.h",
+      "archive": "legacy/calculator/mainwindow.h",
+      "bytes": 2930,
+      "sha256": "efeba71f5a25ff2def112282f961859585a37c636f7a2efb9f04ca57e833972c"
+    },
+    {
+      "app": "calculator",
+      "source": "E:\\--Backup--\\手动备份\\自写程序备份\\自写程序备份\\QT Project\\calculator\\mainwindow.ui",
+      "archive": "legacy/calculator/mainwindow.ui",
+      "bytes": 42183,
+      "sha256": "a76a636b8f22685eb4da6bb63c529471f71292a9addebbee0a36ceb9ef6846e5"
+    },
+    {
+      "app": "calculator",
+      "source": "E:\\--Backup--\\手动备份\\自写程序备份\\自写程序备份\\QT Project\\calculator\\stack.h",
+      "archive": "legacy/calculator/stack.h",
+      "bytes": 5126,
+      "sha256": "4635a21279215904b4658232058f15d05150265c0183785f558a9e645f626c6c"
+    }
+  ]
+}

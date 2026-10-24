@@ -1,0 +1,7 @@
+/.toolchain/
+/build/
+/artifacts/
+/captures/
+*.user
+*.autosave
+__pycache__/

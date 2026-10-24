@@ -1,0 +1,12 @@
+* text=auto
+*.cpp text eol=lf
+*.h text eol=lf
+*.rc text eol=lf
+*.md text eol=lf
+*.ps1 text eol=lf
+*.py text eol=lf
+*.png -text
+*.ico -text
+*.xz -text
+legacy/** -text
+third-party/** -text
