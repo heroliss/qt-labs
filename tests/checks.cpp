@@ -11,6 +11,7 @@
 #include <QTextStream>
 #include <cmath>
 #include <functional>
+#include <limits>
 #include <numbers>
 #include <random>
 #include <stdexcept>
@@ -303,6 +304,15 @@ int main(int argc, char **argv) {
         calc(QStringLiteral("phi"), (std::sqrt(5.) + 1) / 2);
         calc(QStringLiteral("DGOLD"), (std::sqrt(5.) - 1) / 2);
         calc(QStringLiteral("phi*DGOLD"), 1);
+    });
+    check(QStringLiteral("Calculator rejects non-finite context variables"), [] {
+        CalcContext context;
+        context.memory = std::numeric_limits<long double>::infinity();
+        throws([&] { evaluate(QStringLiteral("M"), context); });
+        context.ans = std::numeric_limits<long double>::quiet_NaN();
+        throws([&] { evaluate(QStringLiteral("Ans"), context); });
+        context.variables[0] = std::numeric_limits<long double>::infinity();
+        throws([&] { evaluate(QStringLiteral("X"), context); });
     });
     for (const QString &expression :
          {QString(), QStringLiteral(" "), QStringLiteral("1/0"), QStringLiteral("1%0"),

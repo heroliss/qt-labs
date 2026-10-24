@@ -49,6 +49,17 @@
 
 环境：Windows 10 1809 或更新版本（x64）、Visual Studio 2026 C++ 桌面工具、CMake 3.24+、Qt 6.12.0 MSVC 2022 x64。Qt 的 MSVC 二进制与当前 MSVC 14.51 工具链组合已实际构建验证。
 
+已有 Qt SDK 时可直接构建。需要隔离安装 SDK 和准备分发用 Qt 源码时，可运行：
+
+```powershell
+python -m venv .toolchain/venv
+./.toolchain/venv/Scripts/python.exe -m pip install -r scripts/tooling-requirements.txt
+./.toolchain/venv/Scripts/python.exe scripts/install_qt.py
+./.toolchain/venv/Scripts/python.exe scripts/qt_notices.py
+```
+
+这两个下载脚本仅获取固定版本官方 Qt 文件并校验摘要。随后执行：
+
 ```powershell
 # QT_ROOT 指向自己的 Qt SDK；默认使用本仓库 .toolchain 下的隔离安装。
 ./scripts/build.ps1 -QtRoot 'C:/Qt/6.12.0/msvc2022_64'

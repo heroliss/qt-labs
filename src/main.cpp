@@ -9,6 +9,7 @@
 #include <QScreen>
 #include <QScrollArea>
 #include <QTimer>
+#include <algorithm>
 #include <memory>
 
 int main(int argc, char **argv) {
@@ -60,10 +61,18 @@ int main(int argc, char **argv) {
     scroll->setWidgetResizable(true);
     scroll->setWidget(content);
     window->setCentralWidget(scroll);
+    window->setMinimumSize(960, 600);
     bool widthOkay = false, heightOkay = false;
     int width = parser.value(QStringLiteral("width")).toInt(&widthOkay),
         height = parser.value(QStringLiteral("height")).toInt(&heightOkay);
-    if (widthOkay && heightOkay && width >= 1080 && width <= 3840 && height >= 760 && height <= 2160)
+    if (QScreen *screen = QApplication::primaryScreen()) {
+        const QSize available = screen->availableGeometry().size() - QSize(40, 60);
+        if (!parser.isSet(QStringLiteral("width")))
+            width = std::clamp(width, 960, std::max(960, available.width()));
+        if (!parser.isSet(QStringLiteral("height")))
+            height = std::clamp(height, 600, std::max(600, available.height()));
+    }
+    if (widthOkay && heightOkay && width >= 960 && width <= 3840 && height >= 600 && height <= 2160)
         window->resize(width, height);
     window->show();
     if (parser.isSet(QStringLiteral("capture"))) {
@@ -84,7 +93,8 @@ int main(int argc, char **argv) {
                                      {QStringLiteral("imageHeight"), capture.height()},
                                      {QStringLiteral("devicePixelRatio"), capture.devicePixelRatio()},
                                      {QStringLiteral("captureMethod"),
-                                      QStringLiteral("QWidget::grab - actual native Qt widget tree")},
+                                      QStringLiteral("QWidget::grab - rendered widget tree")},
+                                     {QStringLiteral("platform"), QGuiApplication::platformName()},
                                      {QStringLiteral("path"), path}};
                     report.write(QJsonDocument(data).toJson());
                 }

@@ -109,9 +109,11 @@ std::vector<Token> tokenize(QString source, const CalcContext &context) {
             const QString name = source.mid(start, i - start).toLower();
             bool found = false;
             const long double value = constant(name, context, found);
-            if (found)
+            if (found) {
+                if (!std::isfinite(value) || std::abs(value) > std::numeric_limits<double>::max())
+                    invalid(QStringLiteral("变量或记忆值超出浮点数范围"), start);
                 result.push_back({Token::Number, name, value, start});
-            else if (functionName(name))
+            } else if (functionName(name))
                 result.push_back({Token::Function, name, 0, start});
             else
                 invalid(QStringLiteral("未知函数或常量“%1”").arg(name), start);

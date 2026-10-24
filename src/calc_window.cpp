@@ -12,6 +12,8 @@
 #include <QPlainTextEdit>
 #include <QShortcut>
 #include <QTimer>
+#include <cmath>
+#include <limits>
 
 namespace liss {
 namespace {
@@ -179,9 +181,16 @@ class CalcWindow : public QMainWindow {
                 if (label.startsWith(QStringLiteral("MC")))
                     context_.memory = 0;
                 else if (valid_) {
-                    if (label.startsWith(QStringLiteral("M+")))
-                        context_.memory += last_.value;
-                    else
+                    if (label.startsWith(QStringLiteral("M+"))) {
+                        const long double candidate = context_.memory + last_.value;
+                        if (!std::isfinite(candidate) ||
+                            std::abs(candidate) > std::numeric_limits<double>::max()) {
+                            feedback_->setText(QStringLiteral("记忆累加超出浮点数范围，原记忆值已保留。"));
+                            feedback_->setStyleSheet(QStringLiteral("color: #ffb6ad;"));
+                            return;
+                        }
+                        context_.memory = candidate;
+                    } else
                         context_.memory = last_.value;
                 }
                 memoryValue_->setText(QStringLiteral("M = %1").arg(formatNumber(context_.memory)));
