@@ -50,7 +50,9 @@ long double constant(const QString &name, const CalcContext &context, bool &foun
         return std::numbers::pi_v<long double>;
     if (name == QStringLiteral("e"))
         return std::numbers::e_v<long double>;
-    if (name == QStringLiteral("phi") || name == QStringLiteral("dgold"))
+    if (name == QStringLiteral("phi"))
+        return (std::sqrt(5.0L) + 1) / 2;
+    if (name == QStringLiteral("dgold"))
         return (std::sqrt(5.0L) - 1) / 2;
     if (name == QStringLiteral("c"))
         return 299792458.0L;
@@ -176,7 +178,7 @@ long double single(const QString &f, long double a, const CalcContext &c) {
 }
 } // namespace
 QString formatNumber(long double value) {
-    if (std::abs(value) < 1e-14L)
+    if (value == 0)
         value = 0;
     return QString::number(static_cast<double>(value), 'g', 15);
 }

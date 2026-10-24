@@ -293,6 +293,17 @@ int main(int argc, char **argv) {
         calc(QStringLiteral("sin(pi/2)+X*Y+Z+M+Ans"), 29, context);
         calc(QStringLiteral("asin(1)"), std::numbers::pi / 2, context);
     });
+    check(QStringLiteral("Calculator preserves small scientific values in display"), [] {
+        require(formatNumber(1e-20L) != QStringLiteral("0"), "Small value rounded to zero");
+        require(formatNumber(evaluate(QStringLiteral("1/NA")).value).contains(QStringLiteral("e-24")),
+                "Scientific value lost");
+        require(formatNumber(-0.0L) == QStringLiteral("0"), "Negative zero not normalized");
+    });
+    check(QStringLiteral("Calculator golden ratio and original reciprocal constant"), [] {
+        calc(QStringLiteral("phi"), (std::sqrt(5.) + 1) / 2);
+        calc(QStringLiteral("DGOLD"), (std::sqrt(5.) - 1) / 2);
+        calc(QStringLiteral("phi*DGOLD"), 1);
+    });
     for (const QString &expression :
          {QString(), QStringLiteral(" "), QStringLiteral("1/0"), QStringLiteral("1%0"),
           QStringLiteral("sqrt(-1)"), QStringLiteral("ln(0)"), QStringLiteral("asin(2)"),
