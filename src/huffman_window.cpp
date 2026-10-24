@@ -355,6 +355,15 @@ class HuffmanWindow : public QMainWindow {
         control_ = std::make_shared<WorkControl>();
         auto control = control_;
         setBusy(true);
+        sourceSize_->setText(decode ? QStringLiteral("—") : humanBytes(QFileInfo(source).size()));
+        compressedSize_->setText(QStringLiteral("—"));
+        ratio_->setText(QStringLiteral("—"));
+        mean_->setText(QStringLiteral("—"));
+        integrity_->setText(QStringLiteral("正在处理当前文件…"));
+        entropy_->setText(QStringLiteral("统计完成后显示信息量与编码表"));
+        hash_->setText(QStringLiteral("SHA-256\n—"));
+        frequency_->setStats(HuffmanStats{});
+        codes_->setRowCount(0);
         progress_->setValue(0);
         status_->setText(QStringLiteral("正在启动…"));
         append(QStringLiteral("%1 · %2").arg(decode ? QStringLiteral("解压") : QStringLiteral("压缩"),
@@ -382,10 +391,12 @@ class HuffmanWindow : public QMainWindow {
                                                      [](quint64 value) { return value != 0; }) +
                                    stats.payloadBits / 8 + (stats.payloadBits % 8 != 0);
         compressedSize_->setText(humanBytes(compressed));
-        ratio_->setText(stats.inputBytes
-                            ? QStringLiteral("%1 %").arg(
-                                  100. * (1. - static_cast<double>(compressed) / stats.inputBytes), 0, 'f', 1)
-                            : QStringLiteral("—"));
+        double saving =
+            stats.inputBytes ? 100. * (1. - static_cast<double>(compressed) / stats.inputBytes) : 0.;
+        if (std::abs(saving) < 0.05)
+            saving = 0.;
+        ratio_->setText(stats.inputBytes ? QStringLiteral("%1 %").arg(saving, 0, 'f', 1)
+                                         : QStringLiteral("—"));
         mean_->setText(QStringLiteral("%1").arg(stats.meanBits, 0, 'f', 3));
         entropy_->setText(QStringLiteral("信息熵 %1 bits/byte  ·  不同字节 %2")
                               .arg(stats.entropy, 0, 'f', 3)

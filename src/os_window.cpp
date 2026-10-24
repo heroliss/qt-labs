@@ -366,6 +366,7 @@ class OsWindow : public QMainWindow {
         block_->setEnabled(model_.running().has_value());
         step_->setEnabled(model_.running().has_value() && !timer_.isActive());
         run_->setText(timer_.isActive() ? QStringLiteral("暂停运行") : QStringLiteral("自动运行"));
+        run_->setAccessibleName(run_->text());
         run_->setEnabled(timer_.isActive() || model_.running().has_value());
     }
     void refresh(const QString &message = {}, bool error = false) {
